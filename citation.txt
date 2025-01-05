@@ -1,0 +1,9 @@
+@article{REPO129,
+    author = "Hu, Ying and Zhang, Yong and Gao, Xiaozhi and Gong, Dunwei and Song, Xianfang and Guo, Yinan and Wang, Jun",
+    journal = "Knowledge-Based Systems",
+    pages = "110122",
+    publisher = "Elsevier",
+    title = "{A federated feature selection algorithm based on particle swarm optimization under privacy protection}",
+    volume = "260",
+    year = "2023"
+}
