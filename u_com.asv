@@ -1,0 +1,29 @@
+function gbest=u_com(gbest,k,X,pp)
+
+%产生新的粒子－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+cpop=[];
+cc=5;
+for(i=1:cc)
+    new=gbest(1,1:k);
+    ss=ceil(rand*k)
+    
+    =gbest(1,1:k);
+    for(j=1:k)
+        if(pp>rand)
+            if(cpop(i,j)>0.5)
+                cpop(i,j)=0;
+            else
+                cpop(i,j)=1;
+            end
+        end
+    end
+end
+xcpop=jiema(cpop,k);
+eff=evaluation(cpop,xcpop,X,k);
+for(i=1:cc)
+    if(eff(i,k+1)>gbest(1,k+1))
+        gbest=eff(i,:);
+    elseif(gbest(1,k+1)==eff(i,k+1) & gbest(1,k+2)> eff(i,k+2))
+        gbest=eff(i,:);
+    end
+end
